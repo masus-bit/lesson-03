@@ -1,0 +1,42 @@
+@import App.css;
+
+.container {
+  width: 1000px;
+  height: 500px;
+  background: white;
+  border-radius: 5px;
+  display: var(--flex);
+  justify-content: center;
+  align-items: center;
+}
+.contacts {
+  height: 100%;
+  width: var(--width100);
+  padding: 0;
+  list-style: none;
+  display: var(--flex);
+  flex-direction: column;
+  justify-content: var(--around);
+  &__item {
+    width: var(--width100);
+    height: 50px;
+    border: black 1px dotted;
+    display: var(--flex);
+    justify-content: var(--around);
+    align-items: center;
+    &_active {
+      background-color: var(--active-bg);
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+  &__button {
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: pink;
+  }
+}

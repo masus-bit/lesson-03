@@ -1,11 +1,12 @@
-import './App.css';
+import "./App.css";
+import { Board } from "./components/board/board";
+import { Header } from "./components/header/header";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-
+    <div className="app">
+      <Header />
+      <Board />
     </div>
   );
-}
-
-export default App;
+};
